@@ -1,0 +1,376 @@
+.entryPage-container {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+
+    .content{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-weight: 400;
+    }
+
+    img{
+        height: 20rem;
+        // width: 20rem;
+        margin-left: auto;
+    }
+    }
+
+    button {
+        background-color: green;
+        outline: none;
+        border: none;
+        height: 55px;
+    }
+
+    button:hover {
+        background-color: green;
+    }
+
+    .start-btn {
+        height: 55px;
+        width: 10rem;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.65rem;
+        color: white;
+    }
+
+    .start-btn:hover {
+        background-color: greenyellow;
+        color: black;
+    }
+
+
+}
+
+
+.question-main-container {
+    // background-color: red;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .start-timer {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .questions {
+        // background-color: green;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+
+        h3 {
+            font-size: 2rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timer-heading {
+            display: flex;
+            flex-direction: row;
+            // align-items: stretch;
+            // justify-content: space-evenly;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .options {
+            // background-color: green;
+            height: auto;
+            width: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 10rem 10rem;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10rem;
+            row-gap: 2rem;
+
+            button {
+                height: 55px;
+                width: 300px;
+                background-color: white;
+                outline: none;
+                // border: none;
+                border: 1.5px solid greenyellow;
+            }
+
+            button:hover {
+                background-color: greenyellow;
+            }
+        }
+
+        .previous-next-btn {
+            // background-color: yellow;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            width: 100%;
+            margin-left: 5.5rem;
+            margin-top: 5rem;
+
+            .previous-btn {
+                height: 55px;
+                width: 200px;
+                background-color: rgb(169, 166, 166);
+                outline: none;
+                border: none;
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+
+            .next-btn {
+                height: 55px;
+                width: 200px;
+                background-color: green;
+                outline: none;
+                border: none;
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+            .review-btn{
+                height: 55px;
+                width: 200px;
+                background-color: purple;
+                outline: none;
+                border: none;
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+
+            }
+
+            .finished-btn{
+                height: 55px;
+                width: 200px;
+                border-radius: 0.65rem;
+                background-color: rgb(106, 106, 205);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+.section-container{
+    flex: 1;
+    border-left: 1px solid rgb(213, 212, 212);
+    height: 100vh;
+    // background-color: peru;
+
+    h2{
+       margin: 2rem;
+       border-bottom: 1px solid rgb(213, 212, 212);
+    }
+    .question-numbers {
+        margin: 30px;
+        flex: 1;
+        // background-color: yellow;
+        display: grid;
+        grid-template-columns: 3rem 3rem 3rem;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+
+        button{
+            height: 55px;
+            width: 55px;
+
+        }
+    }
+
+}
+   
+
+
+
+}
+
+.finish-container {
+    background-color: rgb(245, 238, 157);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        // flex: 1;
+        height: 10rem;
+        width: 10rem;
+        // border-radius: 50%;
+    }
+
+    .content {
+        background-color: white;
+        width: 50%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgb(196, 193, 193);
+        border-radius: 0.65rem;
+        box-shadow: 0 0 10px 1px rgb(198, 197, 197);
+
+        p {
+            margin-right: 1rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        img{
+            margin-top: 2rem;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+        }
+        .oops {
+            color: red;
+            margin-right: 1rem;
+        }
+
+
+
+        .heading {
+            // background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .oops {
+                color: red;
+                margin-right: 1rem;
+            }
+
+            p {
+                margin-right: 1rem;
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 600;
+                color: green;
+            }
+        }
+
+        .results {
+            // background-color: peru;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+
+            .wrong-div {
+                // background-color: yellow;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .wrong-content{
+                    display: flex;
+                    img{
+                        height: 3rem;
+                        width: 3rem;
+                    }
+                    h3 {
+                        font-size: 2rem;
+                        // background-color: red;
+    
+                    }
+
+                }
+
+               
+
+                h1 {
+                    border: 1px solid red;
+                    border-radius: 0.65rem;
+                    margin: 0;
+                    padding: 1rem 2rem;
+                    font-size: 4rem;
+                }
+            }
+
+            .correct-div {
+                // background-color: yellowgreen;
+                height: 50%;
+                width: 30%;
+                // border: 1px solid yellowgreen;
+                // border-radius: 0.65rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+               
+
+                .correct-content{
+                    display: flex;
+                    img{
+                        height: 3rem;
+                        width: 3rem;
+                    }
+                    h3 {
+                        font-size: 2rem;
+                        // background-color: red;
+    
+                    }
+                }
+
+
+               
+
+                h1 {
+                    border: 1px solid yellowgreen;
+                    border-radius: 0.65rem;
+                    margin: 0;
+                    padding: 1rem 2rem;
+                    font-size: 4rem;
+                }
+
+            }
+        }
+
+    }
+
+}
