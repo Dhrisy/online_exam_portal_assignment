@@ -32,24 +32,21 @@ function QuestionScreen() {
         console.log(questionIndices);
         setCurrentQuestion(questions[currentQuestionIndex]);
         selectedAnswers[currentQuestionIndex];
-        // console.log(`answrr: ${JSON.stringify(selectedAnswers)},`);
-        // const parsed = JSON.parse(JSON.stringify(selectedAnswers)); // Parse the string back to an array
-        // selectedAnswers.forEach(answer => {
-        //     console.log(`ID: ${answer.id}, Selected Option: ${answer.selectedOption}`);
-        // });
-         // Add event listener for browser's back button
+
+       // Add event listener for browser's back button
          window.onpopstate = () => {
             // Navigate to the home page
             navigate('/');
         };
-        // Cleanup the event listener when component unmounts
+        
         
 
 
         startTimer();
         return () => {
             clearInterval(timer);
-            window.onpopstate = "";
+            // Cleanup the event listener when component unmounts
+            window.onpopstate = null;
         };
 
         

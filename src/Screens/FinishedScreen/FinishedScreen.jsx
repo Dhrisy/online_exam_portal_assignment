@@ -23,48 +23,14 @@ function FinishedScreen() {
     const selectedAnswers = JSON.parse(selectedAnswersParam);
     const unAnswered = JSON.parse(unAnsweredParams);
 
-    // Now you have access to the selectedAnswers array
-    // console.log(selectedAnswer);
-    // console.log(unAnswers);
-
-    // console.log(selectedAnswers);
-    // console.log(unAnswered);
-
-
 
     const [score, setScore] = useState(0);
     const [wrong, setWrong] = useState(0);
-    // const history = useNavigation();
 
 
 
 
-
-    // const calculateResults = () => {
-    //     let correct = 0;
-
-    //     // Loop through each question
-    //     questions.forEach((question, index) => {
-    //         let option = question.answer;
-    //         console.log(`option ${question[option]}`);
-    //         if (selectedAnswers[index] === question[option]) {
-    //             setScore(correct++);
-
-
-    //         } else {
-    //             console.log(`wrong`);
-
-    //         }
-
-
-    //     });
-
-    //     setWrong((questions.length) - score);
-
-    //     return correct;
-    // };
-
-    const calculateResults = () => {
+  const calculateResults = () => {
         let correct = 0;
 
         // Loop through each question
@@ -80,7 +46,7 @@ function FinishedScreen() {
 
                 }
             } else {
-                console.log(`EMPTYYYYYYYYYYYYYYYYY`);
+                console.log(`empty parameters`);
             }
 
 
@@ -115,7 +81,7 @@ function FinishedScreen() {
         };
     }, [selectedAnswers, navigate]);
 
-    // let _score = 5;
+    
     return (
         <div className='finish-container'>
             <div className="content">
