@@ -142,24 +142,38 @@ function FinishedScreen() {
                 </div>
 
 
-                <div className="results">
-                    <div className='correct-div'>
-                        <div className="correct-content">
-                            <h3>Correct</h3>
-                            <img src={Right} alt="Congratulations" />
-                        </div>
-
-                        <h1>{score}</h1>
+                {selectedAnswers !== null 
+                ? <div className="results">
+                <div className='correct-div'>
+                    <div className="correct-content">
+                        <h3>Correct</h3>
+                        <img src={Right} alt="Congratulations" />
                     </div>
-                    <div className="wrong-div">
-                        <div className="wrong-content">
-                            <h3>Wrong</h3>
-                            <img src={Wrong} alt="Congratulations" />
-                        </div>
-                        <h1>{wrong}</h1>
 
-                    </div>
+                    <h1>{score}</h1>
                 </div>
+                <div className="wrong-div">
+                    <div className="wrong-content">
+                        <h3>Wrong</h3>
+                        <img src={Wrong} alt="Congratulations" />
+                    </div>
+                    <h1>{wrong}</h1>
+
+                </div>
+            </div>
+            : <div className='empty-array'>
+               <h3>
+               You didn't answer any questions
+               </h3>
+               <div className="no-results-div">
+                    <div className="no-results-content">
+                        <h3>No results to show</h3>
+                        <img src={Wrong} alt="no results" />
+                    </div>
+                    
+
+                </div>
+                </div>}
             </div>
         </div>
     );

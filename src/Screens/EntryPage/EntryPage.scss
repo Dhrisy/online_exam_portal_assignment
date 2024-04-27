@@ -231,6 +231,46 @@
     align-items: center;
     justify-content: center;
 
+    .empty-array{
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+        .no-results-div{
+
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .no-results-content{
+                display: flex;
+                img{
+                    height: 3rem;
+                    width: 3rem;
+                }
+                h3 {
+                    font-size: 2rem;
+                    // background-color: red;
+
+                }
+
+            }
+            h1 {
+                border: 1px solid red;
+                border-radius: 0.65rem;
+                margin: 0;
+                padding: 1rem 2rem;
+                font-size: 4rem;
+            }
+
+        }
+    }
+
     img {
         // flex: 1;
         height: 10rem;
